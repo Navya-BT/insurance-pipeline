@@ -1,0 +1,30 @@
+{
+  "name": "ai-insurance-pipeline",
+  "version": "1.0.0",
+  "description": "AI-powered insurance data transformation pipeline using AWS Bedrock and OpenAI",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.0.0",
+    "openai": "^4.0.0",
+    "fastify": "^4.0.0",
+    "@fastify/cors": "^8.0.0",
+    "joi": "^17.0.0",
+    "pg": "^8.0.0",
+    "bull": "^4.0.0",
+    "ioredis": "^5.0.0",
+    "dotenv": "^16.0.0",
+    "winston": "^3.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0",
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  }
+}
